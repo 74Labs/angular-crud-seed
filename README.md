@@ -1,7 +1,23 @@
 # angular-crud-seed
 AngularJS CRUD simple seed. Service, controller, routing and templates included.
 
+##Quick start
+
+* Clone this repository into your application modules/components directory
+```bash
+git clone https://github.com/SeventyFourLaboratories/angular-crud-seed.git app/modules/ResourceNameLowerCase
+```
+* Replace placeholders with your own values
+
+* Include scripts into your application
+```html
+<script type="text/javascript" src="app/modules/ResourceNameLowerCase/services.js"></script>
+<script type="text/javascript" src="app/modules/ResourceNameLowerCase/controllers.js"></script>
+<script type="text/javascript" src="app/modules/ResourceNameLowerCase/routing.js"></script>
+```
+
 ##Content
+
 Seed contains:
 * TBD
 * names and variables being placeholders for your own application naming:
