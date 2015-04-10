@@ -7,18 +7,22 @@
 	<form>
 
 		<div class="form-group">
-			<button class="btn btn-danger" ng-click="ctrl.saveItem()">
-				<span class="glyphicon glyphicon-save"></span>&nbsp;Save
-			</button>
-			<a class="btn btn-default" ui-sref="ResourceNameLowerCase.list">
-				<span class="glyphicon glyphicon-menu-left"></span>&nbsp;Cancel
-			</a>		
+			<strong class="lead" ng-bind="ctrl.item.id"></strong>
+			<span class="pull-right">
+				<button class="btn btn-danger" ng-click="ctrl.saveItem()">
+					<span class="glyphicon glyphicon-save"></span>&nbsp;Save
+				</button>
+				<a class="btn btn-default" ui-sref="ResourceNameLowerCase.list">
+					<span class="glyphicon glyphicon-menu-left"></span>&nbsp;Cancel
+				</a>
+			</span>
+			<span class="clearfix"></span>
 		</div>		
 
 		<div class="form-group">
 			<textarea class="form-control" ng-model="ctrl.item.name" rows="10"></textarea>		
 		</div>
 
-	</form>	
+	</form>
 
 </div>

@@ -22,13 +22,13 @@
 				growl.error('ResourceName delete error');
 			});
 		};
-		
-		vm.saveItem = function() {
+			
+		vm.saveItem = function(redirectState) {
 			
 			function success(response, message) {
 				vm.item = response; 
 				growl.success(message);
-				$state.go('ResourceNameLowerCase.edit', {id: vm.item.id});
+				$state.go('ResourceNameLowerCase.' + redirectState, {id: vm.item.id});
 			}
 			
 			function error(response, message) {
@@ -41,7 +41,7 @@
 				AppNameCamelCaseResourceNameCamelCaseService.createResourceNameCamelCase(vm.item).then(function(response) { success(response, 'ResourceName created'); }, function(response) { error(response, 'ResourceName create error'); });
 			}
 			
-		};		
+		};
 			
 	});
 	
