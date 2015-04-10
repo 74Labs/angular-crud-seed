@@ -2,7 +2,7 @@
 
 	<div class="alert alert-warning" role="alert">
 		<strong><span class="glyphicon glyphicon-warning-sign"></span>&nbsp;Warning!&nbsp;</strong>ResourceName form needs customization. This is stub only.
-	</div>	
+	</div>
 
 	<form>
 
@@ -12,15 +12,13 @@
 				<button class="btn btn-danger" ng-click="ctrl.saveItem()">
 					<span class="glyphicon glyphicon-save"></span>&nbsp;Save
 				</button>
-				<a class="btn btn-default" ui-sref="ResourceNameLowerCase.list">
-					<span class="glyphicon glyphicon-menu-left"></span>&nbsp;Cancel
-				</a>
+				<a class="btn btn-link" ui-sref="ResourceNameLowerCase.list">Cancel</a>
 			</span>
 			<span class="clearfix"></span>
-		</div>		
+		</div>
 
 		<div class="form-group">
-			<textarea class="form-control" ng-model="ctrl.item.name" rows="10"></textarea>		
+			<textarea class="form-control" ng-model="ctrl.item.name" rows="10"></textarea>	
 		</div>
 
 	</form>
