@@ -28,7 +28,7 @@
 			function success(response, message) {
 				vm.item = response; 
 				growl.success(message);
-				$state.go('ResourceNameLowerCase.' + redirectState, {id: vm.item.id});
+				$state.go('ResourceAPIPath.' + redirectState, {id: vm.item.id});
 			}
 			
 			function error(response, message) {
