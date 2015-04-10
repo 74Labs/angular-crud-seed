@@ -2,7 +2,10 @@
 
 	'use strict';
 
-	angular.module('AppNameLowerCase.ResourceNameLowerCase.controllers', ['AppNameLowerCase.services', 'angular-growl', 'mgcrea.ngStrap'])
+	angular.module('AppNameLowerCase.ResourceNameLowerCase.controllers', [
+		'AppNameLowerCase.ResourceNemLowerCase.services', 
+		'angular-growl'
+	])
 
 	.controller('AppNameCamelCaseResourceNameCamelCaseController', function(item, items, AppNameCamelCaseService, $state, $filter, growl) {
 			
@@ -12,7 +15,7 @@
 		vm.items = items;
 		
 		vm.deleteItem = function(id) {
-			AppNameCamelCaseService.deleteResourceNameCamelCase(id).then(function() {
+			AppNameCamelCaseResourceNameCamelCaseService.deleteResourceNameCamelCase(id).then(function() {
 				growl.info('ResourceName deleted');
 				vm.items.splice(vm.items.indexOf($filter('filter')(vm.items, {id: id})),1);
 			}, function() {
@@ -33,9 +36,9 @@
 			}
 			
 			if(vm.item.id) {
-				AppNameService.updateResourceNameCamelCase(vm.item).then(function(response) { success(response, 'ResourceName updated'); }, function(response) { error(response, 'ResourceName update error'); });
+				AppNameCamelCaseResourceNameCamelCaseService.updateResourceNameCamelCase(vm.item).then(function(response) { success(response, 'ResourceName updated'); }, function(response) { error(response, 'ResourceName update error'); });
 			} else {
-				AppNameService.createResourceNameCamelCase(vm.item).then(function(response) { success(response, 'ResourceName created'); }, function(response) { error(response, 'ResourceName create error'); });
+				AppNameCamelCaseResourceNameCamelCaseService.createResourceNameCamelCase(vm.item).then(function(response) { success(response, 'ResourceName created'); }, function(response) { error(response, 'ResourceName create error'); });
 			}
 			
 		};		
