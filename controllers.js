@@ -7,7 +7,7 @@
 		'angular-growl'
 	])
 
-	.controller('AppNameCamelCaseResourceNameCamelCaseController', function(item, items, AppNameCamelCaseService, $state, $filter, growl) {
+	.controller('AppNameCamelCaseResourceNameCamelCaseController', function(item, items, AppNameCamelCaseResourceNameCamelCaseService, $state, $filter, growl) {
 			
 		var vm = this;
 		
