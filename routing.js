@@ -49,6 +49,17 @@
   			},
   			controller: 'AppNameCamelCaseResourceNameCamelCaseController',
   			controllerAs: 'ctrl'			
+  		})
+	
+  		.state('ResourceNameLowerCase.edit', {
+  			url: '/{id:[0-9]}/edit',
+  			templateUrl: 'app/modules/ResourceNameLowerCase/html/form.html',
+  			resolve: {
+  				item: function($stateParams, AppNameCamelCaseResourceNameCamelCaseService) { return AppNameCamelCaseResourceNameCamelCaseService.readResourceNameCamelCase($stateParams.id); },
+  				items: function() { return []; }
+  			},
+  			controller: 'AppNameCamelCaseResourceNameCamelCaseController',
+  			controllerAs: 'ctrl'			
   		});
 
 	});

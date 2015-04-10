@@ -28,7 +28,7 @@
 			function success(response, message) {
 				vm.item = response; 
 				growl.success(message);
-				$state.go('ResourceNameLowerCase.show', {id: vm.item.id});
+				$state.go('ResourceNameLowerCase.edit', {id: vm.item.id});
 			}
 			
 			function error(response, message) {
