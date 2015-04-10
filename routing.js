@@ -14,13 +14,13 @@
   		
   		.state('ResourceNameLowerCase', {
   			url: '/ResourceNameLowerCase',
-  			templateUrl: 'app/modules/ResourceNameLowerCase/html/index.html',
+  			templateUrl: 'app/components/ResourceNameLowerCase/html/index.html',
   			abstract: true
   		})
   		
   		.state('ResourceNameLowerCase.list', {
   			url: '',
-  			templateUrl: 'app/modules/ResourceNameLowerCase/html/list.html',
+  			templateUrl: 'app/components/ResourceNameLowerCase/html/list.html',
   			resolve: {
   				item: function() { return null; },
   				items: function(AppNameCamelCaseResourceNameCamelCaseService) { return AppNameCamelCaseResourceNameCamelCaseService.readAllResourceNameCamelCase(); }
@@ -31,7 +31,7 @@
   		
   		.state('ResourceNameLowerCase.show', {
   			url: '/{id:[0-9]}',
-  			templateUrl: 'app/modules/ResourceNameLowerCase/html/show.html',
+  			templateUrl: 'app/components/ResourceNameLowerCase/html/show.html',
   			resolve: {
   				item: function($stateParams, AppNameCamelCaseResourceNameCamelCaseService) { return AppNameCamelCaseResourceNameCamelCaseService.readResourceNameCamelCase($stateParams.id); },
   				items: function() { return []; }
@@ -42,7 +42,7 @@
   		
   		.state('ResourceNameLowerCase.new', {
   			url: '/new',
-  			templateUrl: 'app/modules/ResourceNameLowerCase/html/form.html',
+  			templateUrl: 'app/components/ResourceNameLowerCase/html/form.html',
   			resolve: {
   				item: function() { return {}; },
   				items: function() { return []; }
@@ -53,7 +53,7 @@
 	
   		.state('ResourceNameLowerCase.edit', {
   			url: '/{id:[0-9]}/edit',
-  			templateUrl: 'app/modules/ResourceNameLowerCase/html/form.html',
+  			templateUrl: 'app/components/ResourceNameLowerCase/html/form.html',
   			resolve: {
   				item: function($stateParams, AppNameCamelCaseResourceNameCamelCaseService) { return AppNameCamelCaseResourceNameCamelCaseService.readResourceNameCamelCase($stateParams.id); },
   				items: function() { return []; }
