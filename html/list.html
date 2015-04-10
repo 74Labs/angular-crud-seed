@@ -10,7 +10,7 @@
 	<li class="list-group-item" ng-repeat="item in ctrl.items">
 		<a ui-sref="ResourceNameLowerCase.show({id:item.id})" ng-bind="item"></a>
 		<span class="pull-right">
-			<button type="button" class="btn btn-link btn-xs pull-right" ng-click="ctrl.deleteResourceNameCamelCase(item.id)">
+			<button type="button" class="btn btn-link btn-xs pull-right" ng-click="ctrl.deleteItem(item.id)">
 			  <i class="fa fa-times"></i>
 			</button>
 		</span>
