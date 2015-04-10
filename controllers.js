@@ -25,10 +25,12 @@
 			
 		vm.saveItem = function(redirectState) {
 			
+			var nextState = redirectState ? redirectState : 'edit';
+			
 			function success(response, message) {
 				vm.item = response; 
 				growl.success(message);
-				$state.go('ResourceAPIPath.' + redirectState, {id: vm.item.id});
+				$state.go('ResourceAPIPath.' + nextState, {id: vm.item.id});
 			}
 			
 			function error(response, message) {
