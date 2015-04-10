@@ -3,7 +3,7 @@
 	'use strict';
 
 	angular.module('AppNameLowerCase.ResourceNameLowerCase.controllers', [
-		'AppNameLowerCase.ResourceNemLowerCase.services', 
+		'AppNameLowerCase.ResourceNameLowerCase.services', 
 		'angular-growl'
 	])
 
