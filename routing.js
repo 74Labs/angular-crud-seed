@@ -12,15 +12,15 @@
 
   	$stateProvider
   		
-  		.state('ResourceNameLowerCase', {
-  			url: '/ResourceNameLowerCase',
-  			templateUrl: 'app/components/ResourceNameLowerCase/html/index.html',
+  		.state('ResourceAPIPath', {
+  			url: '/ResourceAPIPath',
+  			templateUrl: 'app/components/ResourceAPIPath/html/index.html',
   			abstract: true
   		})
   		
-  		.state('ResourceNameLowerCase.list', {
+  		.state('ResourceAPIPath.list', {
   			url: '',
-  			templateUrl: 'app/components/ResourceNameLowerCase/html/list.html',
+  			templateUrl: 'app/components/ResourceAPIPath/html/list.html',
   			resolve: {
   				item: function() { return null; },
   				items: function(AppNameCamelCaseResourceNameCamelCaseService) { return AppNameCamelCaseResourceNameCamelCaseService.readAllResourceNameCamelCase(); }
@@ -29,9 +29,9 @@
   			controllerAs: 'ctrl'			
   		})		
   		
-  		.state('ResourceNameLowerCase.show', {
+  		.state('ResourceAPIPath.show', {
   			url: '/{id:[0-9]}',
-  			templateUrl: 'app/components/ResourceNameLowerCase/html/show.html',
+  			templateUrl: 'app/components/ResourceAPIPath/html/show.html',
   			resolve: {
   				item: function($stateParams, AppNameCamelCaseResourceNameCamelCaseService) { return AppNameCamelCaseResourceNameCamelCaseService.readResourceNameCamelCase($stateParams.id); },
   				items: function() { return []; }
@@ -40,9 +40,9 @@
   			controllerAs: 'ctrl'			
   		})
   		
-  		.state('ResourceNameLowerCase.new', {
+  		.state('ResourceAPIPath.new', {
   			url: '/new',
-  			templateUrl: 'app/components/ResourceNameLowerCase/html/form.html',
+  			templateUrl: 'app/components/ResourceAPIPath/html/form.html',
   			resolve: {
   				item: function() { return {}; },
   				items: function() { return []; }
@@ -51,9 +51,9 @@
   			controllerAs: 'ctrl'			
   		})
 	
-  		.state('ResourceNameLowerCase.edit', {
+  		.state('ResourceAPIPath.edit', {
   			url: '/{id:[0-9]}/edit',
-  			templateUrl: 'app/components/ResourceNameLowerCase/html/form.html',
+  			templateUrl: 'app/components/ResourceAPIPath/html/form.html',
   			resolve: {
   				item: function($stateParams, AppNameCamelCaseResourceNameCamelCaseService) { return AppNameCamelCaseResourceNameCamelCaseService.readResourceNameCamelCase($stateParams.id); },
   				items: function() { return []; }
