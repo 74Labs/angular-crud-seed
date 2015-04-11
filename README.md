@@ -11,9 +11,9 @@ git clone https://github.com/SeventyFourLaboratories/angular-crud-seed.git app/c
 
 * Include scripts into your application
 ```html
-<script type="text/javascript" src="app/modules/ResourceNameLowerCase/services.js"></script>
-<script type="text/javascript" src="app/modules/ResourceNameLowerCase/controllers.js"></script>
-<script type="text/javascript" src="app/modules/ResourceNameLowerCase/routing.js"></script>
+<script type="text/javascript" src="app/components/ResourceAPIPath/services.js"></script>
+<script type="text/javascript" src="app/components/ResourceAPIPath/controllers.js"></script>
+<script type="text/javascript" src="app/components/ResourceAPIPath/routing.js"></script>
 ```
 
 ##Content
