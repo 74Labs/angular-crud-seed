@@ -50,7 +50,7 @@ Module name: `myapplication.myresource.services`
 Service name: `MyApplicationMyResourceService`
 
 #####Controller
-TDB
+TBD
 
 #####Routing
 TBD
