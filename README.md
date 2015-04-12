@@ -1,4 +1,4 @@
-# angular-crud-seed
+# Angular CRUD Seed
 AngularJS CRUD simple seed. Service, controller, routing and templates included.
 
 ##Quick start
