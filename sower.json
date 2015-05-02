@@ -1,0 +1,12 @@
+{
+  "name": "angular-crud-seed",
+  "description": "AngularJS CRUD component seed",
+  "placeholders": [
+    { "code": "ResourceName", "description": "" },
+    { "code": "ResourceNameLowerCase", "description": ""},
+    { "code": "ResourceNameCamelCase", "description": ""},
+    { "code": "AppNameLowerCase", "description": ""},
+    { "code": "AppNameCamelCase", "description": ""},
+    { "code": "ResourceAPIPath", "description": ""}
+  ]
+}
