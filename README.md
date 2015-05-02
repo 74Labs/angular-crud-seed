@@ -3,7 +3,7 @@ AngularJS CRUD simple seed. Service, controller, routing and templates included.
 
 ##Quick start
 
-* Clone this repository into your application components directory
+* Clone this repository into your application components directory: app/components/`ResourceAPIPath`
 ```bash
 git clone https://github.com/SeventyFourLaboratories/angular-crud-seed.git app/components/ResourceAPIPath
 ```
